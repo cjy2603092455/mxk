@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "887262",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "1967573",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "3104050",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e50f",
+      "unicode_decimal": 58639
+    },
+    {
+      "icon_id": "3196311",
+      "name": "转发",
+      "font_class": "zhuanfa",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "3364824",
+      "name": "目录",
+      "font_class": "mulu",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "8504816",
+      "name": "三角下标（正方形）",
+      "font_class": "s-top",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "12483209",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "13955589",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+header{
+    width: 990px;
+    margin:0 auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+/* con */
+.con-wrap{
+    width: 778px;
+    height: 400px;
+    margin: 40px auto;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    box-shadow: 0 0 8px #E5E5E5;
+}
+.con-wrap h3{
+    height: 30px;
+    font-size: 16px;
+    font-family: microsoft yahei;
+    color: #888;
+    background: #f8f8f8;
+    padding: 4px 10px;
+    border-bottom: 1px solid #efefef;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    
+}
+.reg_con{
+    width: 800px;
+    padding: 40px 0 80px 70px;  
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+}
+.reg_con table{
+    float: left;
+}
+
+/* ................ */
+#hint1,#hint2,#hint3,#hint4{
+    display: block;
+    position: absolute;
+    left: 388px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+#hint1{
+    top: 52px;
+}
+#hint2{
+    top: 94px;
+}
+#hint3{
+    top: 136px;
+}
+#hint4{
+    top: 253px;
+    left: 249px;
+}
+#hint4 a{
+    color: #f60;
+    text-decoration: underline;
+}
+/* ................ */
+.reg_con table tr td:nth-of-type(1){
+    text-align: right;
+}
+input{
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    color: #aaa;
+}
+.input_k{
+    width: 232px;
+    height: 30px;
+    
+}
+.reg_con table tr td{
+    padding:5px;
+}
+.reg_con tr:nth-of-type(4) input{
+    width: 67px;
+    height: 26px;
+    
+}
+.reg_con tr:nth-of-type(4) span{
+    display: inline-block;
+    height: 26px;
+    width: 67px;
+    text-align: center;
+    line-height: 26px;
+    vertical-align: bottom;
+}
+.reg_con tr:nth-of-type(4) span:nth-of-type(1){
+    font-size: 20px;
+    background: rgb(243, 228, 228);
+    color: rgb(76, 131, 40);
+    font-weight: 500;
+    word-spacing: 5px;
+}
+.reg_con tr:nth-of-type(4) span:nth-of-type(2){
+    cursor: pointer;
+}
+.reg_con tr:nth-of-type(4) td:nth-of-type(2){
+    font-size: 12px;
+}
+.reg_con tr:last-child a{
+    display: block;
+    width: 89px;
+    height: 38px;
+    line-height:38px;
+    text-align:center;
+    color: white;
+    font-weight: 700;
+    background:rgb(116, 43, 25);
+    border-radius:5px;
+}
+.reg_con tr:nth-of-type(5){
+    font-size: 12px;
+}
+.reg_con tr:nth-of-type(5) a{
+    color: blue;
+    text-decoration: underline;
+}
+.conR{
+    border-left: 1px dashed #ccc;
+    height: 300px;
+    width:272px;
+    float: right;
+    margin-left: 80px ;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 12px;
+}
+.conR>a{
+    display: inline-block;
+    width: 91px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    color: #c66;
+    font-size: 14px;
+    font-weight: 700;
+    background: url(../images/loginbg.png);
+    margin: 10px 0 40px;
+    opacity: 0.8;
+}
+.conR>a:hover{
+    opacity: 1;
+    font-weight: 700;
+}
+.conR div img{
+    margin: 0 auto;
+}

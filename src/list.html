@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="./css/reset .css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-wrap">
+            <ul>
+                <li>
+                    欢迎您<a id="index_username" href="login.html">登入名鞋库</a>
+                    <a id="btnLogout" href="#">[注销]</a>
+                </li>
+                <li id="index_login_li"><a href="reg.html">免费注册</a></li>
+
+                <li class="myshoe">
+                    <a href="#">我的名鞋库</a>
+                </li>
+                <li>
+                    <i class="iconfont icon-shouji"></i>
+                    <a href="#">手机名鞋库</a>
+                    <i class="iconfont icon-s-top"></i>
+                    <div class="saomiao">
+                        <img src="./images/saomiao1.png" alt=""><img src="./images/saomiao2.png" alt="">
+                    </div>
+                </li>
+                <li><a href="#">收藏名鞋库</a></li>
+                <li>
+                    <p>联系:400-161-2288</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- logo -->
+    <div class="logo-wrap">
+        <h1>
+            <a href="#">
+                <img src="./images/logo.JPG" alt="">
+            </a>
+        </h1>
+        <div class="logo_center">
+            <input type="text" placeholder="阿迪"><input type="button" value="搜索">
+            <ul id="search-list">
+            </ul>
+            <p>
+                热搜:
+                <a href="#">跑步鞋</a>
+                <a href="#">休闲鞋</a>
+                <a href="#">篮球鞋</a>
+                <a href="#">短袖</a>
+                <a href="#">短裤</a>
+            </p>
+        </div>
+        <div class="logo_r">
+            <div class="logo_rbox">
+                <i class="iconfont icon-gouwuche"></i>
+                <a href="#"> 购物车<span>0</span>件</a>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <nav>
+        <ul class="nav-wrap">
+            <li>
+                所有商品分类
+                <ul class="all_li">
+                    <li>
+                        <a>运动休闲鞋</a><span>&gt;</span>
+                        <div class="li_three">
+                        </div>
+                    </li>
+                    <li>
+                        <a>运动休闲服</a><span>&gt;</span>
+                        <div class="li_three">
+                        </div>
+                    </li>
+                    <li>
+                        <a>跑步</a><span>&gt;</span>
+                        <div class="li_three">
+                        </div>
+                    </li>
+                    <li>
+                        <a>篮球</a><span>&gt;</span>
+                        <div class="li_three">
+                        </div>
+                    </li>
+                    <li>
+                        <a>足球</a><span>&gt;</span>
+                        <div class="li_three">
+                        </div>
+                    </li>
+                    <li>
+                        <a>包包/配件</a><span>&gt;</span>
+                        <div class="li_three">
+                        </div>
+                    </li>
+                    <li>
+                        <a>户外</a><span>&gt;</span>
+                        <div class="li_three">
+                        </div>
+                    </li>
+                    <li>
+                        <a>男鞋</a><span>&gt;</span>
+                    </li>
+                    <li>
+                        <a>童鞋</a><span>&gt;</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">首页</a>
+                <a href="#">男子运动</a>
+                <a href="#">女子运动</a>
+                <a href="#">儿童</a>
+                <a href="#">配件</a>
+                <a href="#">
+                    <i class="iconfont icon-weixin"></i>
+                    <b>
+                        关注微信公众号
+                        <br>
+                        <span>扫码赢100元劵</span>
+                    </b>
+                    <i class="iconfont icon-s-top"></i>
+                    <img src="./images/saomiao1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <img src="./images/nav_r.png" alt="">
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!-- list-con -->
+    <div class="list-con clear_fix">
+        <div class="n-bar">
+            <p>正品鞋、服装、包包
+                <span>(共有
+                    <i>3617</i>
+                    个商品)
+                </span>
+            </p>
+        </div>
+        <div id="n_select" class="clear_fix">
+        </div>
+        <div class="open">
+            <span>展开</span> &nbsp;
+            <i class="iconfont icon-s-top"></i>&nbsp;&nbsp;
+        </div>
+        <div class="n_page">
+            <div class="page_l">
+                排序方式：
+                <a class="change_sort" href="#">默认排序</a>
+                <a class="change_sort" href="#">价格</a>
+                <a class="change_sort" href="#">销量</a>
+            </div>
+            <div class="page_r">
+                总共找到
+                <span id="count_all1">3614</span>
+                个商品
+            </div>
+        </div>
+        <div id="list_box" class="products_list clear_fix">
+
+
+            
+        </div>
+        <div class="bottom_button">
+            <ul class="clear_fix">
+                <li>
+                    <a href="#">下一页</a>
+                </li>
+                <li>
+                    <a href="#">6</a>
+                </li>
+                <li>
+                    <a href="#">...</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">1</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- foot brand -->
+    <div id="footBrand">
+        <div class="footBrand-wrap">
+            <div class="f_top">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <div class="f_bot">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+    <!-- classify -->
+    <div id="classify">
+        <div class="classify-wrap">
+            <div class="classify_h3">
+                <div></div>
+                <h3>商品分类</h3>
+            </div>
+            <div class="classify_bot">
+                <dl>
+                    <dt>
+                        <a href="#">运动鞋</a><br>
+                        <a href="#"><img src="./images/classify_01.jpg" alt=""></a>
+                    </dt>
+                    <dd>
+                        <a href="#">运动鞋</a>
+                        <a href="#">户外鞋</a>
+                        <a href="#">跑步鞋</a>
+                        <a href="#">篮球鞋</a>
+                        <a href="#">足球鞋</a>
+                        <a href="#">训练鞋</a>
+                        <a href="#">徒步鞋</a>
+                        <a href="#">登山鞋</a>
+                        <a href="#">健步鞋</a>
+                        <a href="#">网球鞋</a>
+                        <a href="#">赛车鞋</a>
+                        <a href="#">朔溪鞋</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">运动鞋</a><br>
+                        <a href="#"><img src="./images/classify_01.jpg" alt=""></a>
+                    </dt>
+                    <dd>
+                        <a href="#">运动鞋</a>
+                        <a href="#">户外鞋</a>
+                        <a href="#">跑步鞋</a>
+                        <a href="#">篮球鞋</a>
+                        <a href="#">足球鞋</a>
+                        <a href="#">训练鞋</a>
+                        <a href="#">徒步鞋</a>
+                        <a href="#">登山鞋</a>
+                        <a href="#">健步鞋</a>
+                        <a href="#">网球鞋</a>
+                        <a href="#">赛车鞋</a>
+                        <a href="#">朔溪鞋</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">运动鞋</a><br>
+                        <a href="#"><img src="./images/classify_01.jpg" alt=""></a>
+                    </dt>
+                    <dd>
+                        <a href="#">运动鞋</a>
+                        <a href="#">户外鞋</a>
+                        <a href="#">跑步鞋</a>
+                        <a href="#">篮球鞋</a>
+                        <a href="#">足球鞋</a>
+                        <a href="#">训练鞋</a>
+                        <a href="#">徒步鞋</a>
+                        <a href="#">登山鞋</a>
+                        <a href="#">健步鞋</a>
+                        <a href="#">网球鞋</a>
+                        <a href="#">赛车鞋</a>
+                        <a href="#">朔溪鞋</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="#">运动鞋</a><br>
+                        <a href="#"><img src="./images/classify_01.jpg" alt=""></a>
+                    </dt>
+                    <dd>
+                        <a href="#">运动鞋</a>
+                        <a href="#">户外鞋</a>
+                        <a href="#">跑步鞋</a>
+                        <a href="#">篮球鞋</a>
+                        <a href="#">足球鞋</a>
+                        <a href="#">训练鞋</a>
+                        <a href="#">徒步鞋</a>
+                        <a href="#">登山鞋</a>
+                        <a href="#">健步鞋</a>
+                        <a href="#">网球鞋</a>
+                        <a href="#">赛车鞋</a>
+                        <a href="#">朔溪鞋</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- return home -->
+    <div class="return-wrap">
+        <a href="index.html">
+            <img src="./images/returnHome.jpg" alt="">
+        </a>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="kefu">
+                <img src="./images/kefu.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    <h4>
+                        <a href="#">
+                            <img src="./images/zheng.png" alt="">
+                        </a>
+                    </h4>
+                    <h5>支付方式</h5>
+                    <span>
+                        <a href="#">在线支付</a><br>
+                        <a href="#">货到付款</a><br>
+                        <a href="#">发票说明</a><br>
+                    </span>
+                </li>
+                <li>
+                    <h4>
+                        <a href="#">
+                            <img src="./images/zheng.png" alt="">
+                        </a>
+                    </h4>
+                    <h5>支付方式</h5>
+                    <span>
+                        <a href="#">在线支付</a><br>
+                        <a href="#">货到付款</a><br>
+                        <a href="#">发票说明</a><br>
+                    </span>
+                </li>
+                <li>
+                    <h4>
+                        <a href="#">
+                            <img src="./images/zheng.png" alt="">
+                        </a>
+                    </h4>
+                    <h5>支付方式</h5>
+                    <span>
+                        <a href="#">在线支付</a><br>
+                        <a href="#">货到付款</a><br>
+                        <a href="#">发票说明</a><br>
+                    </span>
+                </li>
+                <li>
+                    <h4>
+                        <a href="#">
+                            <img src="./images/zheng.png" alt="">
+                        </a>
+                    </h4>
+                    <h5>支付方式</h5>
+                    <span>
+                        <a href="#">在线支付</a><br>
+                        <a href="#">货到付款</a><br>
+                        <a href="#">发票说明</a><br>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-mid">
+            <ul class="clear_fix">
+                <li>
+                    <a href="#">关于名鞋库</a>
+                </li>
+                <li>
+                    <a href="#">名鞋库资讯</a>
+                </li>
+                <li>
+                    <a href="#">联系名鞋库</a>
+                </li>
+                <li>
+                    <a href="#">人才招聘</a>
+                </li>
+                <li>
+                    <a href="#">免责条款</a>
+                </li>
+                <li>
+                    <a href="#">法律声明</a>
+                </li>
+                <li>
+                    <a href="#">意见反馈</a>
+                </li>
+                <li>
+                    <a href="#">全部分类</a>
+                </li>
+                <li>
+                    <a href="#">友情链接</a>
+                </li>
+                <li>
+                    <a href="#">鞋码对照表</a>
+                </li>
+                <li>
+                    <a href="#">问答咨询标签主题</a>
+                </li>
+                <li>
+                    <a href="#">鞋子品牌大全</a>
+                </li>
+                <li>
+                    <a href="#">商品大全</a>
+                </li>
+            </ul>
+            <p>
+                <span>Copyroght &copy; 2008-2014</span>
+                <span> s.cn </span>
+                <a href="#"> 名鞋库 </a>
+                <span> All Rights Reserved </span>&nbsp;
+                <a href=""> 闽ICP备08106896号 </a>&nbsp;
+                <span> 经营许可证闽B2-20110061 </span>&nbsp;
+                <a href="">
+                    <img src="./images/20160617.png" alt="">
+                    闽公网安备 35020602000166号
+                </a>
+
+            </p>
+        </div>
+        <div class="footer-bot">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <div class="links">
+            友情链接：
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+            <a href="#">寻购网</a>&nbsp;
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/cookieTools.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/list.js"></script>
+</body>
+
+</html>
