@@ -3,7 +3,7 @@
 	//1、接受客户端的数据（用户输入的数据）
 	$goodsId   = $_REQUEST['goodsId'];
 	$goodsName = $_REQUEST['goodsName'];
-	$typeId = $_REQUEST['typeId'];
+	$typeId = $_REQUEST['typeId2'];
 	$goodsPrice = $_REQUEST['goodsPrice'];
 	$goodsCount = $_REQUEST['goodsCount'];
 	$goodsDesc = $_REQUEST['goodsDesc'];
@@ -46,7 +46,7 @@
 	
 	//3、给客户端返回（响应）一个注册成功！
 	if($count>0){
-		 echo "保存成功,<a href='addGoods.html'>继续添加</a>";
+		 echo "保存成功,<a href='../admin.html'>继续添加</a>";
 	}
 	
 ?>

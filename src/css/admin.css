@@ -1,0 +1,190 @@
+body,html{
+    height: 100%;
+    
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* title */
+#title{
+    height: 100%;
+    width: 200px;
+    overflow-y: visible;
+    background: #363d47;
+    position: relative;
+    
+}
+#title h1{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    left: 0;
+    top: 0em;
+    
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+#title h1 img{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left:40px;
+    width: 260px;
+    height: 80px;
+    border-radius: 40px;
+}
+#title ul{
+    padding: 20px 0 20px 0;
+}
+#title a{
+    display: block;
+    height: 40px;
+    line-height:40px;
+    border-radius: 8px 0 0 8px;
+    position: relative;
+    padding-left: 15px;
+    color: rgb(236, 233, 226);
+    font-size: 14px;
+    font-weight: 700;
+}
+#title li a:hover{
+    background: white;
+    color: rgb(198, 211, 25);
+    
+}
+#title ul li a>span{
+    position: absolute;
+    right: 12px;
+    top: 0;
+    font-size: 18px;
+}
+
+
+
+
+/* con */
+#con{
+    height: 100%;
+    flex: 1;
+    overflow-y: scroll;
+}
+#con .blank{
+    height: 120px;
+    width: 100%;
+    background:rgb(247, 206, 212);
+    
+}
+#con .blank h2{
+    font-size: 50px;
+    padding-left: 20px;
+    color: red;
+    opacity: 0.5;
+    line-height: 120px;
+    text-shadow: 5px 5px 5px rgb(233, 27, 27);
+    font-family: "楷体";
+}
+.show-box h3{
+    height: 34px;
+    background: rgba(161, 219, 226,.3);
+    line-height: 34px;
+    padding-left: 20px;
+    font-weight: 600;
+    
+}
+
+
+#addGoodsType{
+    display: none;
+    text-align: center;
+    padding-top: 50px;
+}
+#addGoodsType input{
+    display: inline-block;
+    height: 20px;
+    margin:10px 0;
+}
+#addGoodsType input:nth-of-type(3){
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    background: rgba(219, 197, 196,.5);
+}
+
+#addGoods{
+    /* display: none; */
+    padding: 20px;
+    position: relative;
+}
+.box_msg{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.box_msg td{
+    border:1px solid black;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.box_msg tr td:nth-of-type(1){
+    width: 150px;
+    /* background: rgba(207, 199, 183, 0.5); */
+    background:-webkit-radial-gradient(center ,ellipse,rgba(207, 199, 183, 0.5) ,white);
+    color: rgb(26, 25, 24);
+}
+.box_msg tr td:nth-of-type(2){
+    width: 400px;
+}
+.box_msg tr td:nth-of-type(3){
+    width: 150px;
+    /* background: rgba(207, 199, 183, 0.5); */
+    background:-webkit-radial-gradient(center ,ellipse,rgba(207, 199, 183, 0.5) ,white);
+    color: rgb(26, 25, 24);
+}
+.box_msg tr td:nth-of-type(4){
+    width: 400px;
+}
+
+.box_msg input{
+    width: 100%;
+    height: 100%;
+    border:none;
+    background: white;
+}
+.box_msg  select{
+    width: 100%;
+    height: 100%;
+    border:none;
+    background: rgb(232, 240, 254);
+    cursor: pointer;
+}
+
+#btn_save{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(179, 105, 45);
+    font-weight: 600;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    left:46%;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+
+#users{
+    display: none;
+}

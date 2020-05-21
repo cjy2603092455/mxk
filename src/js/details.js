@@ -76,6 +76,7 @@ function showDate(data) {
 
 //添加至购物车
 function addShoppingCart(goodsId) {
+    console.log(getCookie('username'))
     $.post('./php/addShoppingCart.php', {
         'vipName': getCookie('username'),
         'goodsId': goodsId,
@@ -84,6 +85,7 @@ function addShoppingCart(goodsId) {
         console.log(data)
         if (data === '0'){
             alert('添加失败')
+            return
         }else{
             alert('添加成功')
         }

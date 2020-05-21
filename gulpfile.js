@@ -31,6 +31,8 @@ gulp.task('watch-all', async () => {
 
         gulp.src('./src/images/**/*')
             .pipe(gulp.dest('D:\\phpstudy_pro\\WWW\\mxk\\images'))
+            gulp.src('./src/documents/**/*')
+            .pipe(gulp.dest('D:\\phpstudy_pro\\WWW\\mxk\\documents'))
     })
 
 })

@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type:text/html;charset=utf-8");
 	//1、接受客户端的数据（用户输入的数据）
-	$typeId   = $_REQUEST['typeId'];
+	$typeId   = $_REQUEST['typeId1'];
 	$goodsType = $_REQUEST['goodsType'];
 	//2、数据保存在数据库中
 	//1）、建立连接（搭桥）
@@ -23,7 +23,7 @@
 	
 	//3、给客户端返回（响应）一个注册成功！
 	if($count>0){
-	    echo "保存成功,<a href='addGoodsType.html'>继续添加</a>";
+	    echo "保存成功,<a href='../admin.html'>继续添加</a>";
 	}
 	
 ?>
