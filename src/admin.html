@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>admin</title>
     <link rel="stylesheet" href="./css//reset .css">
     <link rel="stylesheet" href="./css/admin.css">
 </head>
@@ -49,8 +49,11 @@
                     商品编号:<input autocomplete="off" id="typeId1" type="text" name="typeId1" /><br/>
                     商品类型:<input autocomplete="off" type="text" name="goodsType" /><br/>
                     <input autocomplete="off" type="submit" value="提交" />
+                    <table class="goodsType_all">
+
+                    </table>
                 </form>
-                <form id="addGoods" class="clear_fix" action="./php/saveGoods.php" method="post">
+                <form id="addGoods" action="./php/saveGoods.php" method="post">
 
                     <table class="box_msg">
                         <tr>
@@ -72,49 +75,64 @@
                             <td><input autocomplete="off" type="text" name="goodsDesc" /></td>
                         </tr>
                         <tr>
-                            <td>商品图片</td>
+                            <td>商品图片1</td>
                             <td><input autocomplete="off" type="text" name="goodsImg" /></td>
-                            <td>备用1</td>
+                            <td>商品图片2</td>
                             <td><input autocomplete="off" type="text"  name="beiyong1" /></td>
                         </tr>
                         <tr>
-                            <td>备用2</td>
+                            <td>商品图片3</td>
                             <td><input autocomplete="off" type="text"  name="beiyong2" /></td>
-                            <td>备用3</td>
+                            <td>商品图片4</td>
                             <td><input autocomplete="off" type="text"  name="beiyong3" /></td>
                         </tr>
                         <tr>
-                            <td>备用4</td>
+                            <td>商品图片5</td>
                             <td><input autocomplete="off" type="text"  name="beiyong4" /></td>
-                            <td>备用5</td>
+                            <td>吊牌价</td>
                             <td><input autocomplete="off" type="text"  name="beiyong5" /></td>
                         </tr>
                         <tr>
-                            <td>备用6</td>
+                            <td>备用1</td>
                             <td><input autocomplete="off" type="text"  name="beiyong6" /></td>
-                            <td>备用7</td>
+                            <td>备用2</td>
                             <td><input autocomplete="off" type="text"  name="beiyong7" /></td>
                         </tr>
                         <tr>
-                            <td>备用8</td>
+                            <td>备用3</td>
                             <td><input autocomplete="off" type="text"  name="beiyong8" /></td>
-                            <td>备用9</td>
+                            <td>备用4</td>
                             <td><input autocomplete="off" type="text"  name="beiyong9" /></td>
                         </tr>
                         <tr>
-                            <td>备用10</td>
+                            <td>备用5</td>
                             <td><input autocomplete="off" type="text" name="beiyong10" /></td>
-                            <td>备用11</td>
+                            <td>备用6</td>
                             <td><input autocomplete="off" type="text" name="beiyong11" /></td>
                         </tr>
                         <tr>
-                            <td>备用12</td>
+                            <td>备用7</td>
                             <td><input autocomplete="off" type="text" name="beiyong12" /></td>
-                            <td>备用13</td>
+                            <td>备用8</td>
                             <td><input autocomplete="off" type="text" name="beiyong13" /></td>
                         </tr>
                     </table>
                     <input autocomplete="off" id="btn_save" type="submit" value="保存商品信息" />
+                    <table class="goods_all">
+                        <caption>全部商品
+                        <tr>
+                            <td>编号</td>
+                            <td>商品名称</td>
+                            <td>商品类型</td>
+                            <td>吊牌价</td>
+                            <td>商品价格</td>
+                            <td>现存数量</td>
+                            <td>商品描述</td>
+                            <td>商品图片</td>
+                            <td>操作</td>
+                           
+                        </tr>
+                    </table>
                 </form>
                 <table id="users">
                     
